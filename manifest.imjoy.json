@@ -9,7 +9,7 @@
    "type": "window",
    "tags": [],
    "ui": null,
-   "version": "0.1.2",
+   "version": "0.1.3",
    "api_version": "0.1.2",
    "description": "display localization table in 3D",
    "icon": "extension",
@@ -25,7 +25,7 @@
   {
    "name": "CARE",
    "type": "native-python",
-   "version": "0.1.21",
+   "version": "0.1.30",
    "api_version": "0.1.2",
    "description": "This plugin demonstrates denoising using CARE.",
    "tags": [
@@ -73,10 +73,40 @@
    "uri": "repository/CARE.imjoy.html"
   },
   {
+   "name": "CNS-FTUAnnotator",
+   "type": "window",
+   "tags": [],
+   "ui": "",
+   "version": "0.1.84",
+   "api_version": "0.1.7",
+   "description": "Annotate FTUs in biomedical images, based on HPA SingeCellAnnotator",
+   "icon": "extension",
+   "inputs": null,
+   "outputs": null,
+   "env": "",
+   "permissions": [],
+   "requirements": [
+    "https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js",
+    "https://static.imjoy.io/spectre.css/spectre.min.css",
+    "https://static.imjoy.io/spectre.css/spectre-exp.min.css",
+    "https://static.imjoy.io/spectre.css/spectre-icons.min.css",
+    "https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/css/ol.css",
+    "https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/build/ol.js",
+    "https://www.gstatic.com/charts/loader.js",
+    "https://www.google.com/jsapi"
+   ],
+   "dependencies": [],
+   "defaults": {
+    "fullscreen": true
+   },
+   "runnable": true,
+   "uri": "repository/CNS-FTUAnnotator.imjoy.html"
+  },
+  {
    "name": "DeepBindScan",
    "type": "native-python",
-   "version": "0.2.15",
-   "api_version": "0.1.3",
+   "version": "0.3.0",
+   "api_version": "0.1.7",
    "description": "Predict binding affinity of TF/RBP to a given DNA/RNA sequence.",
    "tags": [],
    "ui": "",
@@ -90,7 +120,7 @@
     "pip: -U tensorflow==1.15.0 keras==2.1.6 kipoi kipoiseq"
    ],
    "dependencies": [
-    "imjoy-team/imjoy-plugins:SchemaIO"
+    "oeway/ImJoy-Plugins:SchemaIO"
    ],
    "cmd": "KERAS_BACKEND=tensorflow python",
    "uri": "repository/DeepBindScan.imjoy.html"
@@ -137,11 +167,11 @@
      }
     }
    ],
-   "version": "0.1.24",
+   "version": "0.2.0",
    "api_version": "0.1.2",
    "url": "",
    "description": "ShuffleNetV2 for HPA.",
-   "icon": "extension",
+   "icon": "https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/apps/hpa-logo.gif",
    "inputs": null,
    "outputs": null,
    "env": null,
@@ -190,7 +220,7 @@
    "type": "window",
    "tags": [],
    "ui": "Explore protein localization patterns in HPA images.",
-   "version": "0.3.11",
+   "version": "0.4.4",
    "api_version": "0.1.2",
    "description": "Explore protein localization patterns in HPA images.",
    "icon": "photo",
@@ -198,7 +228,7 @@
    "outputs": null,
    "requirements": [
     "https://cdn.plot.ly/plotly-latest.min.js",
-    "https://unpkg.com/papaparse@latest/papaparse.min.js",
+    "https://cdn.jsdelivr.net/npm/papaparse@5.2.0/papaparse.min.js",
     "https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js",
     "https://unpkg.com/spectre.css/dist/spectre.min.css",
     "https://unpkg.com/spectre.css/dist/spectre-exp.min.css",
@@ -409,7 +439,7 @@
   {
    "name": "Noise2Self",
    "type": "native-python",
-   "version": "0.1.11",
+   "version": "0.2.0",
    "tags": [
     "CPU",
     "GPU"
@@ -495,6 +525,31 @@
    "uri": "repository/Noise2Void.imjoy.html"
   },
   {
+   "name": "PixelClassifier",
+   "type": "native-python",
+   "version": "0.1.3",
+   "description": "A pixel classifier using random forest",
+   "tags": [],
+   "ui": "",
+   "cover": "",
+   "inputs": null,
+   "outputs": null,
+   "flags": [],
+   "icon": "extension",
+   "api_version": "0.1.8",
+   "env": "",
+   "permissions": [],
+   "requirements": [
+    "pillow",
+    "numpy",
+    "pooch",
+    "scikit-image",
+    "scikit-learn"
+   ],
+   "dependencies": [],
+   "uri": "repository/PixelClassifier.imjoy.html"
+  },
+  {
    "name": "ProteinSequenceUtils",
    "type": "web-python",
    "version": "0.1.1",
@@ -521,7 +576,7 @@
    "type": "window",
    "tags": [],
    "ui": "",
-   "version": "0.2.6",
+   "version": "0.2.7",
    "api_version": "0.1.3",
    "description": "[TODO: describe this plugin with one sentence.]",
    "icon": "extension",
@@ -960,7 +1015,7 @@
   {
    "name": "SMLM File IO",
    "type": "web-worker",
-   "version": "0.1.2",
+   "version": "0.1.3",
    "api_version": "0.1.2",
    "description": "A plugin for loading and exporting SMLM images.",
    "ui": "",
@@ -1040,10 +1095,10 @@
   {
    "name": "Tif File Importer",
    "type": "web-worker",
-   "version": "0.1.3",
+   "version": "0.1.9",
    "api_version": "0.1.0",
    "description": "A plugin for loading tif images.",
-   "ui": "frame number:{id:'frame_num', type:'number', min:0, placeholder:0}",
+   "ui": "frame number:{id:'n_frames', type:'number', min:0, placeholder:0}",
    "tags": [],
    "inputs": {
     "type": "object",
@@ -1068,16 +1123,14 @@
    "requirements": [
     "https://static.imjoy.io/js/UTIF.js"
    ],
-   "dependencies": [
-    "imjoy-team/imjoy-plugins:Image Window"
-   ],
+   "dependencies": [],
    "runnable": false,
    "uri": "repository/tifFileImporter.imjoy.html"
   },
   {
    "name": "Unet Segmentation",
    "type": "native-python",
-   "version": "0.2.0",
+   "version": "0.2.1",
    "api_version": "0.1.2",
    "description": "A plugin for demonstrating unet segmentation with keras.",
    "tags": [
@@ -1093,25 +1146,39 @@
    "env": {
     "CPU": [
      "conda config --add channels conda-forge",
-     "conda create -n tf-cpu python=3.6 tensorflow==1.5"
+     "conda create -n tf-cpu python=3.6"
     ],
     "GPU": [
      "conda config --add channels conda-forge",
-     "conda create -n tf-gpu python=3.6 tensorflow-gpu==1.5"
+     "conda create -n tf-gpu python=3.6"
     ],
     "Windows-CPU": [
      "conda config --add channels conda-forge",
-     "conda create -n tf-cpu python=3.5 tensorflow==1.2.1"
+     "conda create -n tf-cpu python=3.6"
     ],
     "Windows-GPU": [
      "conda config --add channels conda-forge",
-     "conda create -n tf-gpu python=3.5 tensorflow-gpu==1.2.1"
+     "conda create -n tf-gpu python=3.6"
     ]
    },
-   "requirements": [
-    "repo:https://github.com/zhixuhao/unet",
-    "pip:h5py scikit-image keras==2.1.4"
-   ],
+   "requirements": {
+    "CPU": [
+     "repo:https://github.com/zhixuhao/unet",
+     "pip:h5py scikit-image keras==2.1.4 numpy==1.18.0 tensorflow==1.15.4"
+    ],
+    "GPU": [
+     "repo:https://github.com/zhixuhao/unet",
+     "pip:h5py scikit-image keras==2.1.4 numpy==1.18.0 tensorflow-gpu==1.15.4"
+    ],
+    "Windows-CPU": [
+     "repo:https://github.com/zhixuhao/unet",
+     "pip:h5py scikit-image keras==2.1.4 numpy==1.18.0 tensorflow==1.15.4"
+    ],
+    "Windows-GPU": [
+     "repo:https://github.com/zhixuhao/unet",
+     "pip:h5py scikit-image keras==2.1.4 numpy==1.18.0 tensorflow-gpu==1.15.4"
+    ]
+   },
    "dependencies": [],
    "uri": "repository/unet.imjoy.html"
   },
